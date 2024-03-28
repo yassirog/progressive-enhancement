@@ -44,7 +44,7 @@ Als een browser CSS en/of JS niet ondersteunt valt het terug naar laag 1 of 2, z
 
 Voor deze opdracht ga je een aantal UI componenten ontwerpen, bouwen en testen in verschillende lagen, volgens het principe van _Progressive Enhancement_. 
 
-Fork deze leertaak en en ga aan de slag met de files die klaar staat. 
+Fork deze leertaak en ga aan de slag met de [files die klaar staat](https://fdnd-task.github.io/progressive-enhancement/).
 
 Voor elk component staat een HTML-file klaar met een video van het eindresultaat. 
 In de HTML van elk component staan wat hints en content die je nodig hebt.

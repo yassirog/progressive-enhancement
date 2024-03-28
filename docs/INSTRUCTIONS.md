@@ -28,7 +28,7 @@ Progressive Enhancement is een _(coding) strategy_ waarmee je er voor kan zorgen
 
 1. Eerst bouw je de _core functionality_ van je website in HTML, zo nodig met server-side rendering. 
 De _content layer_. 
-Zo zorg je er voor dat je website het in de meest eenvoudige vorm goed werkt.
+Zo zorg je er voor dat je website het in de meest eenvoudige vorm goed doet.
 2. Daarna voeg je CSS toe voor feedback voor de gebruiker en om de huisstijl toe te passen.
 Dit noemen we de _presentation layer_.
 3. Tot slot voeg je met CSS en JS extra enhancements toe om de _User Experience_ te verbeteren. 

@@ -46,7 +46,7 @@ Voor deze opdracht ga je een aantal UI componenten ontwerpen, bouwen en testen i
 
 Fork deze leertaak en ga aan de slag met de [files die klaar staan](https://fdnd-task.github.io/progressive-enhancement/).
 
-Voor elk component staat een HTML-file klaar met een video van het eindresultaat. 
+Voor elk component staat een HTML-file klaar met een demo video van het eindresultaat. 
 In de HTML van elk component staan wat hints en content die je nodig hebt.
 
 

@@ -40,6 +40,9 @@ Progressive Enhancement is een _(coding) strategy_ waarmee je er voor kan zorgen
 
 Voor deze opdracht ga je een aantal UI componenten ontwerpen, bouwen en testen in verschillende lagen, volgens het principe van _Progressive Enhancement_. 
 
+Fork deze leertaak en en ga aan de slag met de files die klaar staat. 
+
+Voor elk component staat een HTML-file klaar met een video van het eindresultaat. In de HTML staan tips om het component 
 
 
 ### UI componenten

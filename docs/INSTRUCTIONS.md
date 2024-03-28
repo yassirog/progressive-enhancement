@@ -29,8 +29,10 @@ Progressive Enhancement is een _(coding) strategy_ waarmee je er voor kan zorgen
 1. Eerst bouw je de _core functionality_ van je website in HTML, zo nodig met server-side rendering. 
 De _content layer_. 
 Zo zorg je er voor dat je website het in de meest eenvoudige vorm goed werkt.
-2. Daarna voeg je CSS toe voor feedback voor de gebruiker en om de huisstijl toe te passen, de _presentation layer_.
-3. Tot slot voeg je met CSS en JS extra enhancements toe om de _User Experience_ te verbeteren. Als een browser CSS en/of JS niet ondersteund valt het terug naar laag 1 of 2, zodat de website altijd werkt.
+2. Daarna voeg je CSS toe voor feedback voor de gebruiker en om de huisstijl toe te passen.
+dit noemen we de _presentation layer_.
+3. Tot slot voeg je met CSS en JS extra enhancements toe om de _User Experience_ te verbeteren. 
+Als een browser CSS en/of JS niet ondersteund valt het terug naar laag 1 of 2, zodat de website altijd werkt.
 
 ![image](https://github.com/fdnd-task/progressive-enhancement/assets/1391509/f6d0490b-6748-4fc8-8a63-d33d2f2d0b68)
 <br><small>_The skateboard may be a little slower, but it doesn’t stop the user getting to where they want to go. So, if the user’s browser doesn’t support JavaScript or modern CSS then it doesn’t break_ - Andy Bell

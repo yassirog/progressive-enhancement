@@ -42,21 +42,22 @@ Voor deze opdracht ga je een aantal UI componenten ontwerpen, bouwen en testen i
 
 Fork deze leertaak en en ga aan de slag met de files die klaar staat. 
 
-Voor elk component staat een HTML-file klaar met een video van het eindresultaat. In de HTML staan tips om het component 
+Voor elk component staat een HTML-file klaar met een video van het eindresultaat. 
+In de HTML van elk component staan wat hints en content die je nodig hebt.
 
 
 ### UI componenten
 
 Maak minimaal 3 van onderstaande user interface componenten: 
 
-- Veelgestelde vragen
-- Switch control
-- Mobiel menu
-- Rating
-- Favorieten picker
-- Carrousel
-- File upload met preview
-- Tabbladen
+- [Veelgestelde vragen]()
+- [Switch control]()
+- [Mobiel menu]()
+- [Rating]()
+- [Favorieten picker]()
+- [Carrousel]()
+- [File upload met preview]()
+- [Tabbladen]()
 
 
 ### Aanpak (per component)

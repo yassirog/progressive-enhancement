@@ -26,7 +26,9 @@ Het doel van deze opdracht is te leren hoe je een website kan ontwerpen en maken
 ### Progressive enhancement
 Progressive Enhancement is een _(coding) strategy_ waarmee je er voor kan zorgen dat je website het altijd doet. 
 
-1. Eerst bouw je de _core functionality_ van je website in HTML, zo nodig met server-side rendering. De _content layer_. Zo zorg je er voor dat je website in de meest eenvoudige vorm goed werkt.
+1. Eerst bouw je de _core functionality_ van je website in HTML, zo nodig met server-side rendering. 
+De _content layer_. 
+Zo zorg je er voor dat je website het in de meest eenvoudige vorm goed werkt.
 2. Daarna voeg je CSS toe voor feedback voor de gebruiker en om de huisstijl toe te passen, de _presentation layer_.
 3. Tot slot voeg je met CSS en JS extra enhancements toe om de _User Experience_ te verbeteren. Als een browser CSS en/of JS niet ondersteund valt het terug naar laag 1 of 2, zodat de website altijd werkt.
 

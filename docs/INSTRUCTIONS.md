@@ -50,14 +50,14 @@ In de HTML van elk component staan wat hints en content die je nodig hebt.
 
 Maak minimaal 3 van onderstaande user interface componenten: 
 
-- [Veelgestelde vragen]()
-- [Switch control]()
-- [Mobiel menu]()
-- [Rating]()
-- [Favorieten picker]()
-- [Carrousel]()
-- [File upload met preview]()
-- [Tabbladen]()
+- [Veelgestelde vragen](https://fdnd-task.github.io/progressive-enhancement/faq.html)
+- [Switch control](https://fdnd-task.github.io/progressive-enhancement/switch.html)
+- [Mobiel menu](https://fdnd-task.github.io/progressive-enhancement/menu.html)
+- [Rating](https://fdnd-task.github.io/progressive-enhancement/rating.html)
+- [Favorieten picker](https://fdnd-task.github.io/progressive-enhancement/pickers.html)
+- [Carrousel](https://fdnd-task.github.io/progressive-enhancement/carrousel.html)
+- [File upload met preview](https://fdnd-task.github.io/progressive-enhancement/file.html)
+- [Tabbladen](https://fdnd-task.github.io/progressive-enhancement/tabs.html)
 
 
 ### Aanpak (per component)

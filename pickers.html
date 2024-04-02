@@ -1,27 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="nl">
-	<head>
-		<meta charset="utf-8">
-		<title>Favorieten picker / Progressive Enhancement / FDND</title>
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-		<link href="assets/styles.css" rel="stylesheet">
-		<style>
-			/* Schrijf hier gewoon je CSS voor dit component */
+  <head>
+    <meta charset="utf-8" />
+    <title>Favorieten picker / Progressive Enhancement / FDND</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/styles.css" rel="stylesheet" />
+    <style>
+      /* Schrijf hier gewoon je CSS voor dit component */
+      .teacher-container {
+        width: 300px;
+        height: 200px;
+        background-color: purple;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
 
-			/* Hint: Dit component kun je volledig met HTML en CSS bouwen */
+      select {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        background-color: transparent;
+        color: white;
+      }
+      /* Hint: Dit component kun je volledig met HTML en CSS bouwen */
 
-			/* Hint: Kijk eens naar field-sizing */
-		</style>
-	</head>
+      /* Hint: Kijk eens naar field-sizing */
+    </style>
+  </head>
 
-	<body>
-		<h1>Favorieten picker</h1>
+  <body>
+    <h1>Favorieten picker</h1>
 
-		<form>
+    <form>
+      <div class="teacher-container" onclick="changeColor()">
+        <select id="teacherSelect">
+          <option value="" disabled selected>Selecteer een docent</option>
+          <option value="1">Berat Zekaj</option>
+          <option value="2">Charley Muhren</option>
+          <option></option>
+          <!-- Voeg meer opties toe voor andere docenten -->
+        </select>
+      </div>
+      <!-- Hint: hoe kun je aan een invoerelement een lijst meegeven? -->
 
-			<!-- Hint: hoe kun je aan een invoerelement een lijst meegeven? -->
-
-			<!-- Een lijstje met docenten
+      <!-- Een lijstje met docenten
 			Berat Zekaj
 			Charley Muhren
 			Cyd Stumpel
@@ -34,20 +62,27 @@
 			Suus ten Voorde
 			-->
 
-			<!-- De kleurcodes van FDND:
+      <!-- De kleurcodes van FDND:
 			#A675F5
 			#050542
 			#66E5BF
 			#FFFC86
 			-->
+    </form>
 
-		</form>
-
-		<details open>
-			<summary>Demo video</summary>
-			<video src="assets/pickers.mp4" width="749" height="417" controls muted autoplay loop>
-				<a href="assets/pickers.mp4">assets/pickers.mp4</a>
-			</video>
-		</details>
-	</body>
+    <details open>
+      <summary>Demo video</summary>
+      <video
+        src="assets/pickers.mp4"
+        width="749"
+        height="417"
+        controls
+        muted
+        autoplay
+        loop
+      >
+        <a href="assets/pickers.mp4">assets/pickers.mp4</a>
+      </video>
+    </details>
+  </body>
 </html>

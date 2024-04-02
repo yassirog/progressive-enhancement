@@ -1,23 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="nl">
-	<head>
-		<meta charset="utf-8">
-		<title>Carrousel / Progressive Enhancement / FDND</title>
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-		<link href="assets/styles.css" rel="stylesheet">
-		<style>
-			/* Schrijf hier gewoon je CSS voor dit component */
+  <head>
+    <meta charset="utf-8" />
+    <title>Carrousel / Progressive Enhancement / FDND</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/styles.css" rel="stylesheet" />
+    <style>
+      /* Schrijf hier gewoon je CSS voor dit component */
+      .slider {
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        scroll-snap-type: x mandatory;
+      }
+      .slides {
+        display: flex;
+        flex-direction: row;
+        scroll-snap-type: x mandatory;
+      }
+      .slide {
+        font-size: 1.5em;
+        background-color: aqua;
+        flex: 0 0 auto;
+        width: 100%;
+        height: 400px;
+        max-width: 70vw;
+        scroll-snap-align: center;
+        padding: 20px;
+        text-align: center;
+        overflow: hidden;
+        white-space: pre-wrap;
+      }
 
-			/* Hint: welk layout model is handig om content naast elkaar te zetten? */
-		</style>
-		<script type="module">
-			/* Schrijf hier eventueel je client-side JavaScript */
-		</script>
-	</head>
-	<body>
-		<h1>Carrousel</h1>
+      #kaas {
+        background-color: red;
+      }
 
-		<!-- Content
+      #kaas1 {
+        background-color: antiquewhite;
+      }
+
+      #kaas2 {
+        background-color: violet;
+      }
+
+      #kaas3 {
+        background-color: cadetblue;
+      }
+
+      #kaas4 {
+        background-color: darkolivegreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Carrousel</h1>
+    <div class="slider">
+      <div class="slides">
+        <div class="slide" id="kaas">
+          <h1>"Websites leren bouwen, én praktijkervaring opdoen?"</h1>
+        </div>
+        <div class="slide" id="kaas1">
+          <h1>
+            "FDND is de enige HBO-opleiding voor Frontend Development in
+            Nederland, in twee jaar stomen wij jou klaar voor het werkveld"
+          </h1>
+        </div>
+        <div class="slide" id="kaas2">
+          <h1>
+            "Je werkt bij ons aan échte projecten voor échte opdrachtgevers"
+          </h1>
+        </div>
+        <div class="slide" id="kaas3">
+          <h1>
+            "In het studiomodel werken studenten onder begeleiding van coaches
+            en experts uit het vakgebied aan praktijkgerichte opdrachten"
+          </h1>
+        </div>
+        <div class="slide" id="kaas4">
+          <h1>
+            "Bij FDND leer je websites bouwen en andere belangrijke skills die
+            jij in de praktijk toe kan passen"
+          </h1>
+        </div>
+        <div class="slide" id="kaas5">
+          <h1>
+            "Een Associate degree-opleiding is een tweejarige hbo-opleiding op
+            niveau 5"
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- Content
+			
 
 		“Websites leren bouwen, én praktijkervaring opdoen?”
 
@@ -33,11 +112,19 @@
 
 		-->
 
-		<details open>
-			<summary>Demo video</summary>
-			<video src="assets/carrousel.mp4" width="1298" height="469" controls muted autoplay loop>
-				<a href="assets/carrousel.mp4">assets/carrousel.mp4</a>
-			</video>
-		</details>
-	</body>
+    <details open>
+      <summary>Demo video</summary>
+      <video
+        src="assets/carrousel.mp4"
+        width="1298"
+        height="469"
+        controls
+        muted
+        autoplay
+        loop
+      >
+        <a href="assets/carrousel.mp4">assets/carrousel.mp4</a>
+      </video>
+    </details>
+  </body>
 </html>

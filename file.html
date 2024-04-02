@@ -1,41 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="nl">
-	<head>
-		<meta charset="utf-8">
-		<title>File upload met preview / Progressive Enhancement / FDND</title>
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-		<link href="assets/styles.css" rel="stylesheet">
-		<style>
-			/* Schrijf hier gewoon je CSS voor dit component */
+  <head>
+    <meta charset="utf-8" />
+    <title>File upload met preview / Progressive Enhancement / FDND</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/styles.css" rel="stylesheet" />
+    <style>
+      /* Schrijf hier gewoon je CSS voor dit component */
 
-			/* Hint: Denk niet te ingewikkeld */
-		</style>
-		<script type="module">
-			/* Schrijf hier eventueel je client-side JavaScript */
-			
-			/* Hint: Met een paar regels kom je al een heel eind */
+      /* Hint: Denk niet te ingewikkeld */
+      input[type="file"] {
+        display: none;
+      }
 
-			/* Hint: Via JS kun je Custom Properties in CSS aanpassen */
-		</script>
-	</head>
-	<body>
-		<h1>File upload met preview</h1>
+      label {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        padding: 1em;
+        border-radius: 0.5em;
+        border: 0.2em solid black;
+        width: 50em;
+        height: 20em;
+        display: block;
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
+    <script type="module">
+      /* Schrijf hier eventueel je client-side JavaScript */
 
-		<!-- Voor het uploaden van een bestand heb je altijd een formulier nodig.
+      /* Hint: Met een paar regels kom je al een heel eind */
+
+      /* Hint: Via JS kun je Custom Properties in CSS aanpassen */
+      let fileImage = document.querySelector("#file");
+      let outputImage = document.querySelector("#output");
+
+      fileImage.addEventListener("change", function () {
+        let file = this.files[0];
+        if (file) {
+          var reader = new FileReader();
+          reader.onload = function (event) {
+            outputImage.style.backgroundImage =
+              "url('" + event.target.result + "')";
+          };
+          reader.readAsDataURL(file);
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <h1>File upload met preview</h1>
+
+    <!-- Voor het uploaden van een bestand heb je altijd een formulier nodig.
 			 Dus die krijg je alvast. Maak je over de server niet druk; het gaat om de UI. -->
-		<form method="post">
+    <form method="post">
+      <!-- Hint: Denk niet te ingewikkeld -->
 
-			<!-- Hint: Denk niet te ingewikkeld -->
+      <label for="file" id="output">Selecteer n foto</label>
+      <input type="file" id="file" name="file" accept="image/*" />
 
-			<button type="submit" class="fdnd-button">Uploaden</button>
+      <button type="submit" class="fdnd-button">Uploaden</button>
+    </form>
 
-		</form>
-
-		<details open>
-			<summary>Demo video</summary>
-			<video src="assets/file.mp4" width="1496" height="496" controls muted autoplay loop>
-				<a href="assets/file.mp4">assets/file.mp4</a>
-			</video>
-		</details>
-	</body>
+    <details open>
+      <summary>Demo video</summary>
+      <video
+        src="assets/file.mp4"
+        width="1496"
+        height="496"
+        controls
+        muted
+        autoplay
+        loop
+      >
+        <a href="assets/file.mp4">assets/file.mp4</a>
+      </video>
+    </details>
+  </body>
 </html>
